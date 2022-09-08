@@ -3,6 +3,7 @@ import './App.css';
 import Header from './components/header/Header';
 import UpperMain from './components/upperMain/UpperMain';
 import Team from "./components/team/Team"
+import Form from './components/form/Form';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
         <UpperMain/>
       </div>
       <Team/>
+      <Form/>
     </>
   );
 }

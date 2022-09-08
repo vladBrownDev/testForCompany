@@ -1,0 +1,89 @@
+@import "../config.scss";
+
+#formSection {
+    background-color: $orange;
+    @include width-center;
+    height: 560px;
+    border-radius: 20px;
+    margin-top: 200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    #leftFormSection {
+        margin-right: 125px;
+        h1 {
+            @include headText
+        }
+        #formDescription {
+            @include primary-font;
+            max-width: 384px;
+            margin-top: 40px;
+        }
+    }
+    #rightFormSection {
+        background-color: $grey;
+        width: 422px;
+        height: 352px;
+        border-radius: 16px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 40px 55px;
+        h2  {
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 32px;
+            line-height: 56px;
+            text-transform: capitalize;
+            color: #222433;
+            margin-bottom: 24px;
+            margin-top: 0;
+        }
+        #logInForm {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .logInInput {
+                width: 312px;
+                height: 48px;
+                border-radius: 40px;
+                background-color: white;
+                border: none;
+                padding: 12px 24px;
+                @include primary-font;
+                font-size: 14px;
+                color: #807C7C;
+            }
+            #emailInput {
+                margin-top: 16px;
+            }
+            #logInFormButton {
+                width: 312px;
+                height: 48px;
+                border-radius: 40px;
+                background-color: $red;
+                color: white;
+                font-family: 'Poppins';
+                font-weight: 700;
+                font-size: 13px;
+                letter-spacing: 1px;
+                color: #FFFFFF;
+                margin-top: 37px;
+                cursor: pointer;
+            }
+        }
+    }
+    #rightFormSection::before {
+        content: "";
+        background-image: url("../../imgs//form/leafs.png");
+        width: 60px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        height: 100px;
+        position: absolute;
+        margin-top: -60px;
+        margin-left: 420px;
+    }
+}
