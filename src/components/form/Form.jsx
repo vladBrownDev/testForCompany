@@ -5,6 +5,7 @@ export default function Form () {
     let [nameInpValue, setNameInpValue] = useState("")
     let [emailInpValue, setEmailInpValue] = useState("")
     function collectInpValues(e) {
+        e.preventDefault()
         console.log(nameInpValue, emailInpValue)
         e.target.id === "nameInput" ?
         setNameInpValue(e.target.value) : setEmailInpValue(e.target.value)

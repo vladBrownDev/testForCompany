@@ -1,0 +1,40 @@
+@import "../config.scss";
+footer {
+    @include width-center;
+    margin-top: 96px;
+    margin-bottom: 88px;
+    display: flex;
+    justify-content: space-between;
+    .footerColumn {
+        h1 {
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 34px;
+            text-transform: uppercase;
+            color: #333333;
+            margin-bottom: 32px;
+            height: 48px;
+        }
+        .footerText {
+            @include primary-font
+        }
+        h2 {
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 20px;
+            letter-spacing: 0.3px;
+            color: #333333;
+            margin-bottom: 32px;
+            height: 48px;
+            display: flex;
+            align-items: center;
+        }
+        #footerMedia {
+            width: 128px;
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+}
