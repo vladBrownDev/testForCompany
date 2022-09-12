@@ -141,6 +141,7 @@
             #inputShell {
                 margin: 40px auto 0 auto;
                 width: 93vw;
+                
                 input {
                     width: auto;
                 }
@@ -148,6 +149,8 @@
                     margin-left: auto;
                     margin-right: 8px;
                     width: 20vw;
+                    position: absolute;
+                    left: 73vw;
                 }
             }
         }
