@@ -38,3 +38,32 @@ footer {
         }
     }
 }
+
+@media screen and (max-width:900px) {
+    footer {
+        flex-wrap: wrap;
+        .footerColumn:nth-child(1) {
+            width: 95vw;
+            margin-bottom:33px;
+            h1 {
+                margin-bottom: 7px;
+            }
+            div {
+                display: inline;
+            }
+        }
+        .footerColumn {
+            h2 {
+                margin-bottom: 15px;
+            }
+            #footerMedia {
+                width: 136px;
+            }
+            .footerText {
+                max-width: 122px;
+
+            }
+        }
+    }
+    
+}

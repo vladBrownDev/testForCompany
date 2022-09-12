@@ -23,10 +23,12 @@ export default function Carousel () {
                     onSwiper={(swiper) => {
                         swiperRef.current = swiper;
                     }}
-                    slidesPerView={4}
+                    slidesPerView={window.screen.width < 900 ? 1 : 4}
                     onSlideChange={(swiper) => setCurrentSlide(swiper.activeIndex + 1)}
                     centeredSlides={true}
+                    spaceBetween={14}
                     className="carousel"
+
                 >
                             <SwiperSlide>
                                 <div className="carouselSlideInner" id="carouselWater">                                    

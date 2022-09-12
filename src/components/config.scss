@@ -12,6 +12,7 @@ button {
     border:none;
 }
 
+
 @mixin primary-font() {
     font-family: 'Poppins';
     font-style: normal;
@@ -34,4 +35,22 @@ button {
     color: #222433;
     margin-bottom: 0;
     margin-top: 0;
+}
+
+@media screen and (max-width: 1300px) {
+    section, header, footer {
+        padding-left:25px;
+        padding-right: 25px;
+    }
+    #teamSection {
+        padding: 0;
+    }
+    #carouselSection {
+        padding-right:0;
+        padding-left: 0;
+    }
+    #formSection {
+        padding-left: 35px;
+        padding-right: 35px;
+    }
 }

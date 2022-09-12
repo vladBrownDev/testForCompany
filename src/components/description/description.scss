@@ -107,3 +107,65 @@
         }
     }
 }
+@media screen and (max-width:1300px) {
+    #descriptionSection {
+        align-items: center;
+        #leftDescription {
+            #descriptionHead {
+                font-size: 28px;
+                text-align: left;
+            }
+            p {
+                font-size: 15px;
+                line-height: 175%;
+                width: 320px;
+            }
+            button {
+                margin-top: 32px;
+            }
+        }
+        #rightDescription {
+            .accordion ,.openedAccordion {
+                min-width: 0;
+                width:43vw;
+                h2 {
+                    font-size: 1.7vw;
+                }
+            }
+            .accordion, .accordionHead {
+                height: 6vw;
+            }
+            .accordion:nth-child(1) .accordionHead ,
+            .openedAccordion:nth-child(1) .accordionHead {
+                padding-top: 2vw;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:900px) {
+    #descriptionSection {
+        flex-direction: column;
+        #rightDescription {
+            margin-top: 48px;
+            .accordion ,.openedAccordion {
+                min-width: 0;
+                width: 320px;
+                h2 {
+                    font-size: 1.7vw;
+                }
+            }
+            .accordion, .accordionHead {
+                height: 104px;
+            }
+            .accordion .accordionHead h2,
+            .openedAccordion .accordionHead h2{
+                font-family: 'Poppins';
+                font-style: normal;
+                font-weight: 600;
+                font-size: 18px;
+                max-width: 279px ;
+            }
+        }
+    }
+}

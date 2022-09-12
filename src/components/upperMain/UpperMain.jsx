@@ -41,7 +41,7 @@ export default function UpperMain () {
                         e.target.style.left = ` ${7 + (e.clientX / 25)}px`
                     }}
                     >
-                        {membersNum}
+                        <span>{membersNum}</span>
                     </div>
                 </div>
             </div>

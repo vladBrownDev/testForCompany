@@ -5,6 +5,9 @@
 .activeNav {
     font-weight: 700;
 }
+#mobileHeader {
+    display: none;
+}
 header {
     height: 112px;
     border-bottom: 3px solid black;
@@ -20,12 +23,11 @@ header {
     }
     nav {
         @include primary-font();
+        width: 548px;
+        display: flex;
+        justify-content: space-between;
         span {
-            margin-left: 102px;
             cursor: pointer;
-        }
-        span:nth-child(1) {
-            margin-left: 0px;
         }
     }
     #applyBut {
@@ -41,5 +43,73 @@ header {
         font-size: 16px;
         color: black;
         cursor: pointer;
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    header {
+        nav {
+            width: 50vw;
+        }
+        
+    }
+}
+@media screen and (max-width:900px) {
+    header {
+        display: none;
+    }
+    .closedHeader {
+        height: 120px;
+        transition: 0.4s ease-in height;
+    }
+    .openedHeader {
+        height: 100vh;
+        position: fixed;
+        background-color: #F7F3F4;;
+        z-index: 5;
+        transition: 0.4s ease-in height;
+    }
+    #mobileHeader {
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+        width: 100%;
+        border: none;
+        margin: 0;
+        #headMobileHeader {
+            border-bottom:3px solid black;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            padding: 38px 0 38px 0;
+            #toogleHeader {
+                width: 22px;
+                height: 17px;
+                object-fit: contain;
+            }
+        }
+        #mobileHeadBody {
+            height: calc(100vh - 104px);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            nav {
+                display: flex;
+                flex-direction: column;
+                margin-top: 72px;
+                span {
+                    text-align: center;
+                    font-family: 'Poppins';
+                    font-style: normal;
+                    font-size: 28px;
+                    margin-bottom: 58px;
+                }
+            }
+            #applyBut {
+                width: calc(100vw - 50px);
+                margin-top: 15vw;
+            }
+        }
     }
 }

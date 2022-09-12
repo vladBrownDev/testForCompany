@@ -87,3 +87,49 @@
         margin-left: 420px;
     }
 }
+@media screen and (max-width:900px)  {
+    #formSection {
+        flex-direction: column;
+        height: auto;
+        padding-top: 42px;
+        padding-bottom: 56px;
+        #leftFormSection {
+            margin-right: 0;
+            h1 {
+                font-family: 'Poppins';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 28px;
+                text-transform: capitalize;
+                color: #222433;
+                text-align: left;
+            }
+            #formDescription {
+                font-family: 'Poppins';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 15px;
+                line-height: 175%;
+                color: #1E1A20;
+                mix-blend-mode: normal;
+                opacity: 0.9;
+                max-width: 312px;
+                margin-top: 20px;
+            }
+        }
+        #rightFormSection {
+            width: 100%;
+            max-width: 328px;
+            margin-top:55px;
+            #logInForm {
+                .logInInput, #logInFormButton {
+                    width: 291px;
+                }
+            }
+            
+        }
+        #rightFormSection::before {
+            margin-left: 315px;
+        }
+    }
+}
