@@ -10,7 +10,7 @@ import "swiper/css/navigation";
 export default function Carousel () {
     let [currentSlide, setCurrentSlide] = useState(1)
     const swiper = useSwiper();
-    const swiperRef = useRef();
+    const swiperRef = useRef(swiper);
 
     function carouselNav(e) {
         if (e.target.id === "swiperPrev") swiperRef.current.slidePrev()

@@ -15,6 +15,7 @@ export default function UpperMain () {
     useEffect(() => {
         axios.get("https://www.random.org/integers/?num=1&min=1&max=99999&col=1&base=10&format=plain&rnd=new")
         .then((response) => {
+            console.log(changeMembersStatus)
             setMembersNum(response.data)
         })
     },[isMembersNumChanged]) 
