@@ -123,13 +123,13 @@
             margin-top:55px;
             #logInForm {
                 .logInInput, #logInFormButton {
-                    width: 291px;
+                    width: 120%;
                 }
             }
             
         }
-        #rightFormSection::before {
-            margin-left: 315px;
+        #rightFormSection::before {     
+            margin-left: 252px;
         }
     }
 }
